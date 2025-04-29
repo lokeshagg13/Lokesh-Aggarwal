@@ -4,6 +4,7 @@ import {
   NavLink,
   Route,
   Routes,
+  Navigate,
 } from "react-router-dom";
 import About from "../../pages/About/About";
 import Education from "../../pages/Education/Education";
@@ -63,7 +64,10 @@ const Navbar = () => {
       </nav>
 
       <Routes>
-        <Route path="/" element={<About />} />
+        <Route
+          path="/Lokesh-Aggarwal/"
+          element={<Navigate to="/about" replace />}
+        />
         <Route path="/services" element={<Service />} />
         <Route path="/education" element={<Education />} />
         <Route path="/workexperience" element={<WorkExperience />} />
