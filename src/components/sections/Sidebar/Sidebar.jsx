@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 import Resume from "../../../updated-resume/CV.pdf";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
@@ -24,13 +25,24 @@ const socials = [
 ];
 
 const Sidebar = () => {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/about");
+  };
+
   return (
     <aside className="sticky top-0 bg-white md:mx-8 lg:mx-4 mb-8 p-6 shadow-md rounded-md -mt-40">
-      <div className="w-32 rounded-md overflow-hidden mx-auto mb-5">
+      <div
+        className="w-32 rounded-md overflow-hidden mx-auto mb-5"
+        onClick={handleClick}
+      >
         <img src={profile} alt="lokesh-aggarwal" className="w-full" />
       </div>
       <div className="text-center">
-        <h1 className="text-xl text-gray-800 font-bold mb-1">
+        <h1
+          className="text-xl text-gray-800 font-bold mb-1 cursor-pointer hover:text-purple-600"
+          onClick={handleClick}
+        >
           Lokesh Aggarwal
         </h1>
         <p className="text-sm text-gray-400 mb-3">

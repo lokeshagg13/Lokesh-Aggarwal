@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  BrowserRouter as Router,
   NavLink,
   Route,
   Routes,
@@ -54,7 +53,7 @@ const navbarData = [
 
 const Navbar = () => {
   return (
-    <Router>
+    <>
       <nav className="md:mx-8 mb-3 px-6 py-2 z-10 sticky top-0 bg-white shadow rounded">
         <ul className="flex flex-wrap">
           {navbarData.map((el, id) => (
@@ -64,10 +63,7 @@ const Navbar = () => {
       </nav>
 
       <Routes>
-        <Route
-          path="/Lokesh-Aggarwal/"
-          element={<Navigate to="/about" replace />}
-        />
+        <Route path="/" element={<Navigate to="/about" replace />} />
         <Route path="/services" element={<Service />} />
         <Route path="/education" element={<Education />} />
         <Route path="/workexperience" element={<WorkExperience />} />
@@ -76,7 +72,7 @@ const Navbar = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
       </Routes>
-    </Router>
+    </>
   );
 };
 
