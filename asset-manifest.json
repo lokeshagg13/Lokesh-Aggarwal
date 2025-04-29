@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.js": "/Lokesh-Aggarwal/static/js/main.50f36b49.js",
+    "static/media/cover-image.jpg": "/Lokesh-Aggarwal/static/media/cover-image.b7563b4f7dc598581690.jpg",
+    "static/media/fareportal-gsfa.png": "/Lokesh-Aggarwal/static/media/fareportal-gsfa.208a6cda56ea6cea0d1f.png",
+    "static/media/profile.jpg": "/Lokesh-Aggarwal/static/media/profile.9b5f9ff9e2e6fabec772.jpg",
+    "static/media/book-recommender.png": "/Lokesh-Aggarwal/static/media/book-recommender.6675a6c7e86d0aaab288.png",
+    "static/media/research-paper.jpg": "/Lokesh-Aggarwal/static/media/research-paper.d8093468b4cd411bc0c7.jpg",
+    "static/media/mbi_certif.png": "/Lokesh-Aggarwal/static/media/mbi_certif.7622e422681edb75b36a.png",
+    "static/media/ml-certif2.png": "/Lokesh-Aggarwal/static/media/ml-certif2.150a5cb0e07c45250c5a.png",
+    "static/media/smart-world.png": "/Lokesh-Aggarwal/static/media/smart-world.fce95633d304d6040b77.png",
+    "static/media/sun360.png": "/Lokesh-Aggarwal/static/media/sun360.17cee6275e9d5851a0cf.png",
+    "static/media/customer-churn.png": "/Lokesh-Aggarwal/static/media/customer-churn.366d99c22858da658e13.png",
+    "static/media/ggsip-uni-logo.png": "/Lokesh-Aggarwal/static/media/ggsip-uni-logo.26f25d5c05384956ccbb.png",
+    "static/media/fareportal-incred.jpg": "/Lokesh-Aggarwal/static/media/fareportal-incred.3fd3a6feae4d5ad9c994.jpg",
+    "static/media/CV.pdf": "/Lokesh-Aggarwal/static/media/CV.c7c3ab4da8ecb11e8038.pdf",
+    "static/media/monash-uni-logo.svg": "/Lokesh-Aggarwal/static/media/monash-uni-logo.d7758ca4ec2bdb5775fcb04236f3be31.svg",
+    "static/media/fareportal-logo.jpg": "/Lokesh-Aggarwal/static/media/fareportal-logo.7fac6602fce3dcb515fa.jpg",
+    "index.html": "/Lokesh-Aggarwal/index.html",
+    "main.50f36b49.js.map": "/Lokesh-Aggarwal/static/js/main.50f36b49.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.50f36b49.js"
+  ]
+}
