@@ -1,8 +1,10 @@
 import React from "react";
 import BookRecommenderImage from "../../../images/portfolio/book-recommender.png";
 import SmartWorldImage from "../../../images/portfolio/smart-world.png";
+import ManasVaniImage from "../../../images/portfolio/manas-vani.png";
 import Sun360Image from "../../../images/portfolio/sun360.png";
 import CustomerChurnImage from "../../../images/portfolio/customer-churn.png";
+
 import PortfolioItem from "./PortfolioItem";
 
 const portfolioData = [
@@ -26,6 +28,15 @@ const portfolioData = [
   },
   {
     id: 3,
+    image: ManasVaniImage,
+    title: "Manas Vani: Ramcharitmanas Explorer",
+    description:
+      "A data science-powered platform to explore Ramcharitmanas using semantic search and theme-based categorization.",
+    link: "https://huggingface.co/spaces/lkaggarwal1997/Manas-Vani",
+    github: "https://github.com/lokeshagg13/Ramcharitmanas-Text-Analysis",
+  },
+  {
+    id: 4,
     image: Sun360Image,
     title: "Sun360: UV Hazard Awareness",
     description:
@@ -34,7 +45,7 @@ const portfolioData = [
     github: "https://github.com/lokeshagg13/sun360",
   },
   {
-    id: 4,
+    id: 5,
     image: CustomerChurnImage,
     title: "Customer Churn Prediction",
     description:
