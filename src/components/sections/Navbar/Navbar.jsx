@@ -1,10 +1,4 @@
-import React from "react";
-import {
-  NavLink,
-  Route,
-  Routes,
-  Navigate,
-} from "react-router-dom";
+import React, { useState } from "react";
 import About from "../../pages/About/About";
 import Education from "../../pages/Education/Education";
 import WorkExperience from "../../pages/WorkExperience/WorkExperience";
@@ -17,81 +11,74 @@ const navbarData = [
   {
     id: 1,
     title: "About",
-    to: "/about",
+    component: <About />,
   },
   {
     id: 2,
     title: "Services",
-    to: "/services",
+    component: <Service />,
   },
   {
     id: 3,
     title: "Education",
-    to: "/education",
+    component: <Education />,
   },
   {
     id: 4,
     title: "Work Experience",
-    to: "/workexperience",
+    component: <WorkExperience />,
   },
   {
     id: 5,
     title: "Portfolio",
-    to: "/portfolio",
+    component: <Portfolio />,
   },
   {
     id: 6,
     title: "Achievements",
-    to: "/achievements",
+    component: <Achievements />,
   },
   {
     id: 7,
     title: "Contact",
-    to: "/contact",
+    component: <Contact />,
   },
 ];
 
 const Navbar = () => {
+  const [currentPage, setCurrentPage] = useState(navbarData[0].title); // Default to "About"
+
+  const renderPage = () => {
+    const currentNavItem = navbarData.find((item) => item.title === currentPage);
+    return currentNavItem ? currentNavItem.component : <About />;
+  };
+
   return (
     <>
+      {/* Navigation Bar */}
       <nav className="md:mx-8 mb-3 px-6 py-2 z-10 sticky top-0 bg-white shadow rounded">
         <ul className="flex flex-wrap">
-          {navbarData.map((el, id) => (
-            <LinkItem el={el} key={id} />
+          {navbarData.map((el) => (
+            <li className="m-3 lg:mx-5" key={el.id}>
+              <button
+                className={`${
+                  currentPage === el.title
+                    ? "text-purple-600 text-medium hover:text-purple-800 cursor-pointer"
+                    : "text-gray-800 text-medium hover:text-purple-600 cursor-pointer"
+                }`}
+                onClick={() => setCurrentPage(el.title)}
+              >
+                {el.title}
+              </button>
+            </li>
           ))}
         </ul>
       </nav>
 
-      <Routes>
-        <Route path="/" element={<Navigate to="/about" replace />} />
-        <Route path="/services" element={<Service />} />
-        <Route path="/education" element={<Education />} />
-        <Route path="/workexperience" element={<WorkExperience />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/achievements" element={<Achievements />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
+      {/* Dynamic Page Rendering */}
+      <div>{renderPage()}</div>
     </>
   );
 };
 
 export default Navbar;
-
-const LinkItem = (props) => {
-  const { title, to } = props.el;
-  return (
-    <li className="m-3 lg:mx-5">
-      <NavLink
-        to={to}
-        className={({ isActive }) =>
-          isActive
-            ? "text-purple-600 text-medium hover:text-purple-800"
-            : "text-gray-800 text-medium hover:text-purple-600"
-        }
-      >
-        {title}
-      </NavLink>
-    </li>
-  );
-};
