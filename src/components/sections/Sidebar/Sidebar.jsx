@@ -1,9 +1,8 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 
-import Resume from "../../../updated-resume/CV.pdf";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { SiHuggingface } from "react-icons/si";
+import Resume from "../../../updated-resume/CV.pdf";
 import profile from "../../../images/profile.jpg";
 
 const socials = [
@@ -24,16 +23,15 @@ const socials = [
   },
 ];
 
-const Sidebar = () => {
-  const navigate = useNavigate();
+const Sidebar = ({ setCurrentPage }) => {
   const handleClick = () => {
-    navigate("/about");
+    setCurrentPage("About");
   };
 
   return (
     <aside className="sticky top-0 bg-white md:mx-8 lg:mx-4 mb-8 p-6 shadow-md rounded-md -mt-40">
       <div
-        className="w-32 rounded-md overflow-hidden mx-auto mb-5"
+        className="w-32 rounded-md overflow-hidden mx-auto mb-5 cursor-pointer"
         onClick={handleClick}
       >
         <img src={profile} alt="lokesh-aggarwal" className="w-full" />

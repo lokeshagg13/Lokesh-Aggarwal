@@ -1,12 +1,10 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 
 import cover from "../../../images/cover-image.jpg";
 
-const ProfileCover = () => {
-  const navigate = useNavigate();
+const ProfileCover = ({ setCurrentPage }) => {
   const handleClick = () => {
-    navigate("/about");
+    setCurrentPage("About");
   };
   return (
     <div className="h-60 w-full" onClick={handleClick}>
