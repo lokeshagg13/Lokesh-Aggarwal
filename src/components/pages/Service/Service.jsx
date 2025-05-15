@@ -21,7 +21,7 @@ const serviceData = [
     icon: <SiTensorflow />,
     title: "Deep Learning and Natural Language Processing Solutions",
     description:
-      "Designing deep learning pipelines for tasks like facial emotion recognition and customer churn analysis, leveraging frameworks like TensorFlow and Keras.",
+      "Designing deep learning pipelines for NLP & Computer Vision based tasks leveraging frameworks like TensorFlow and Keras.",
   },
   {
     id: 3,
@@ -40,9 +40,9 @@ const serviceData = [
   {
     id: 5,
     icon: <SiLangchain />,
-    title: "AI and LLM Customization",
+    title: "LLM and RAG based Solutions",
     description:
-      "Fine-tuning Large Language Models (LLMs) using LangChain and Hugging Face for specific business applications, improving accuracy and usability.",
+      "Fine-tuning Large Language Models (LLMs) using LangChain, RAG and Hugging Face for specific business applications.",
   },
   {
     id: 6,

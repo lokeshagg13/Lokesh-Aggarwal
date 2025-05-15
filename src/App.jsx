@@ -10,6 +10,7 @@ import Achievements from "./components/pages/Achievements/Achievements";
 import Contact from "./components/pages/Contact/Contact";
 import Portfolio from "./components/pages/Portfolio/Portfolio";
 import Service from "./components/pages/Service/Service";
+import Chatbot from "./components/sections/Chatbot/Chatbot";
 
 const navbarData = [
   { id: 1, title: "About", component: <About /> },
@@ -32,7 +33,7 @@ function App() {
       <div className="container px-4">
         <div className="flex flex-wrap px-4">
           <div className="w-full lg:w-1/3 ">
-            <Sidebar setCurrentPage={setCurrentPage}/>
+            <Sidebar setCurrentPage={setCurrentPage} />
           </div>
           <div className="w-full lg:w-2/3 ">
             <Navbar
@@ -41,6 +42,9 @@ function App() {
               navbarData={navbarData}
             />
             <div>{currentNavItem?.component}</div>
+          </div>
+          <div className="w-full lg:w-1/3">
+            <Chatbot />
           </div>
         </div>
       </div>

@@ -1,40 +1,103 @@
-import React from "react";
+import React, { useState } from "react";
 import SkillItem from "./SkillItem";
 
 const skillData = [
   {
     id: 1,
-    title: "SQL (PostgreSQL, MySQL)",
-    percentage: "98%",
+    title: "SQL (Microsoft SQL Server, PostgreSQL)",
+    percentage: "93%",
+    sub: [
+      {
+        id: 1,
+        title: "Microsoft SQL Server",
+        percentage: "95%",
+      },
+      {
+        id: 1,
+        title: "PostgreSQL",
+        percentage: "90%",
+      },
+    ],
   },
   {
     id: 2,
     title: "Python (Scikit-learn, Pandas, NumPy, SciPy)",
     percentage: "95%",
+    sub: [
+      {
+        id: 1,
+        title: "Python Programming",
+        percentage: "95%",
+      },
+      {
+        id: 2,
+        title: "Data Wrangling & Analysis using Pandas",
+        percentage: "90%",
+      },
+      {
+        id: 3,
+        title: "Scikit-Learn",
+        percentage: "80%",
+      },
+      {
+        id: 4,
+        title: "Numpy",
+        percentage: "80%",
+      },
+      {
+        id: 5,
+        title: "SciPy",
+        percentage: "65%",
+      },
+    ],
   },
   {
     id: 3,
-    title: "R",
+    title: "Azure Databricks, Azure ML",
     percentage: "90%",
+    sub: [
+      {
+        id: 1,
+        title: "Azure Databricks",
+        percentage: "80%",
+      },
+      {
+        id: 2,
+        title: "Azure ML",
+        percentage: "65%",
+      },
+    ],
   },
   {
     id: 4,
-    title: "Supervised Learning (Regression, Classification)",
+    title: "Machine Learning & Deep Learning Algorithms",
     percentage: "90%",
   },
   {
     id: 5,
-    title: "Neural Networks (CNN, RNN, LSTM)",
-    percentage: "85%",
-  },
-  {
-    id: 6,
-    title: "Unsupervised Learning (Clustering, PCA, EM)",
+    title: "Predictive Analysis",
     percentage: "75%",
   },
   {
+    id: 6,
+    title: "Data Visualization (Tableau, Power BI)",
+    percentage: "85%",
+    sub: [
+      {
+        id: 1,
+        title: "Power BI",
+        percentage: "90%",
+      },
+      {
+        id: 2,
+        title: "Tableau",
+        percentage: "75%",
+      },
+    ],
+  },
+  {
     id: 7,
-    title: "Random Forests, XGBoost",
+    title: "Natural Language Processing",
     percentage: "80%",
   },
   {
@@ -51,6 +114,18 @@ const skillData = [
     id: 10,
     title: "Tensorflow, Keras, PyTorch",
     percentage: "75%",
+    sub: [
+      {
+        id: 1,
+        title: "Tensorflow and Keras",
+        percentage: "80%",
+      },
+      {
+        id: 2,
+        title: "PyTorch",
+        percentage: "80%",
+      },
+    ],
   },
   {
     id: 11,
@@ -59,22 +134,56 @@ const skillData = [
   },
   {
     id: 12,
-    title: "Fine-tuning (Hugging Face)",
+    title: "Fine-tuning Hugging Face Models",
     percentage: "70%",
   },
   {
     id: 13,
-    title: "Azure Databricks, Azure ML",
-    percentage: "75%",
+    title: "LangChain, LLMs, RAG",
+    percentage: "60%",
+    sub: [
+      {
+        id: 1,
+        title: "LangChain",
+        percentage: "80%",
+      },
+      {
+        id: 2,
+        title: "LLMs",
+        percentage: "75%",
+      },
+      {
+        id: 3,
+        title: "RAG",
+        percentage: "75%",
+      },
+    ],
   },
   {
     id: 14,
-    title: "LangChain, LLMs",
-    percentage: "60%",
+    title: "R programming",
+    percentage: "65%",
   },
 ];
 
 const Skills = () => {
+  const [activeExpansions, setActivExpansions] = useState(
+    Array(skillData.length).fill(false)
+  );
+
+  const expandSkill = (idx) => {
+    hideAllSkills();
+    setActivExpansions((prevExpansions) => {
+      const newExpansions = [...prevExpansions];
+      newExpansions[idx] = true;
+      return newExpansions;
+    });
+  };
+
+  const hideAllSkills = () => {
+    setActivExpansions(Array(skillData.length).fill(false));
+  };
+
   return (
     <div className="py-4">
       <div className="flex flex-wrap">
@@ -84,7 +193,14 @@ const Skills = () => {
           </div>
         </div>
         {skillData.map((skill, id) => (
-          <SkillItem skill={skill} key={id} />
+          <SkillItem
+            key={id}
+            id={id}
+            skill={skill}
+            active={activeExpansions[id]}
+            onExpand={expandSkill}
+            onHide={hideAllSkills}
+          />
         ))}
       </div>
     </div>
