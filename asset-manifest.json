@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.js": "/Lokesh-Aggarwal/static/js/main.e099d465.js",
+    "main.js": "/Lokesh-Aggarwal/static/js/main.baca97ed.js",
     "static/media/manas-vani.png": "/Lokesh-Aggarwal/static/media/manas-vani.402704b0b8417007a8d1.png",
     "static/media/cover-image.jpg": "/Lokesh-Aggarwal/static/media/cover-image.b7563b4f7dc598581690.jpg",
     "static/media/fareportal-gsfa.png": "/Lokesh-Aggarwal/static/media/fareportal-gsfa.208a6cda56ea6cea0d1f.png",
     "static/media/profile.jpg": "/Lokesh-Aggarwal/static/media/profile.9b5f9ff9e2e6fabec772.jpg",
     "static/media/book-recommender.png": "/Lokesh-Aggarwal/static/media/book-recommender.6675a6c7e86d0aaab288.png",
+    "static/media/chatbot-icon-transp.png": "/Lokesh-Aggarwal/static/media/chatbot-icon-transp.7290bf2efe9ef0cf3a1d.png",
     "static/media/research-paper.jpg": "/Lokesh-Aggarwal/static/media/research-paper.d8093468b4cd411bc0c7.jpg",
     "static/media/mbi_certif.png": "/Lokesh-Aggarwal/static/media/mbi_certif.7622e422681edb75b36a.png",
     "static/media/ml-certif2.png": "/Lokesh-Aggarwal/static/media/ml-certif2.150a5cb0e07c45250c5a.png",
@@ -15,12 +16,13 @@
     "static/media/ggsip-uni-logo.png": "/Lokesh-Aggarwal/static/media/ggsip-uni-logo.26f25d5c05384956ccbb.png",
     "static/media/fareportal-incred.jpg": "/Lokesh-Aggarwal/static/media/fareportal-incred.3fd3a6feae4d5ad9c994.jpg",
     "static/media/CV.pdf": "/Lokesh-Aggarwal/static/media/CV.c7c3ab4da8ecb11e8038.pdf",
+    "static/media/loading.gif": "/Lokesh-Aggarwal/static/media/loading.991555b7690041a05b34.gif",
     "static/media/monash-uni-logo.svg": "/Lokesh-Aggarwal/static/media/monash-uni-logo.d7758ca4ec2bdb5775fcb04236f3be31.svg",
     "static/media/fareportal-logo.jpg": "/Lokesh-Aggarwal/static/media/fareportal-logo.7fac6602fce3dcb515fa.jpg",
     "index.html": "/Lokesh-Aggarwal/index.html",
-    "main.e099d465.js.map": "/Lokesh-Aggarwal/static/js/main.e099d465.js.map"
+    "main.baca97ed.js.map": "/Lokesh-Aggarwal/static/js/main.baca97ed.js.map"
   },
   "entrypoints": [
-    "static/js/main.e099d465.js"
+    "static/js/main.baca97ed.js"
   ]
 }
