@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/Lokesh-Aggarwal/static/js/main.baca97ed.js",
+    "main.js": "/Lokesh-Aggarwal/static/js/main.f23f263f.js",
     "static/media/manas-vani.png": "/Lokesh-Aggarwal/static/media/manas-vani.402704b0b8417007a8d1.png",
     "static/media/cover-image.jpg": "/Lokesh-Aggarwal/static/media/cover-image.b7563b4f7dc598581690.jpg",
     "static/media/fareportal-gsfa.png": "/Lokesh-Aggarwal/static/media/fareportal-gsfa.208a6cda56ea6cea0d1f.png",
@@ -15,14 +15,14 @@
     "static/media/customer-churn.png": "/Lokesh-Aggarwal/static/media/customer-churn.366d99c22858da658e13.png",
     "static/media/ggsip-uni-logo.png": "/Lokesh-Aggarwal/static/media/ggsip-uni-logo.26f25d5c05384956ccbb.png",
     "static/media/fareportal-incred.jpg": "/Lokesh-Aggarwal/static/media/fareportal-incred.3fd3a6feae4d5ad9c994.jpg",
-    "static/media/CV.pdf": "/Lokesh-Aggarwal/static/media/CV.c7c3ab4da8ecb11e8038.pdf",
+    "static/media/CV.pdf": "/Lokesh-Aggarwal/static/media/CV.6bc1212ee44ca627bf1b.pdf",
     "static/media/loading.gif": "/Lokesh-Aggarwal/static/media/loading.991555b7690041a05b34.gif",
     "static/media/monash-uni-logo.svg": "/Lokesh-Aggarwal/static/media/monash-uni-logo.d7758ca4ec2bdb5775fcb04236f3be31.svg",
     "static/media/fareportal-logo.jpg": "/Lokesh-Aggarwal/static/media/fareportal-logo.7fac6602fce3dcb515fa.jpg",
     "index.html": "/Lokesh-Aggarwal/index.html",
-    "main.baca97ed.js.map": "/Lokesh-Aggarwal/static/js/main.baca97ed.js.map"
+    "main.f23f263f.js.map": "/Lokesh-Aggarwal/static/js/main.f23f263f.js.map"
   },
   "entrypoints": [
-    "static/js/main.baca97ed.js"
+    "static/js/main.f23f263f.js"
   ]
 }
