@@ -23,7 +23,7 @@ const SkillItem = (props) => {
           </div>
         </div>
         {sub && sub.length > 0 && active ? (
-          <div className="p-2 tryit">
+          <div className="p-2">
             {sub.map((subskill, idx) => (
               <SkillSubItem key={`sub_${idx}`} skill={subskill} />
             ))}

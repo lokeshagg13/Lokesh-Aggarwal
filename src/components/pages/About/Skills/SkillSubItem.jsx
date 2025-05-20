@@ -3,7 +3,7 @@ import React from "react";
 const SkillSubItem = (props) => {
   const { title, percentage } = props.skill;
   return (
-    <div className="w-full md:w-1/2">
+    <div className="w-full">
       <div className="mb-4 md:mx-4">
         <div className="flex justify-between items-center mb-1">
           <h5 className="text-sm text-gray-400 font-light">{title}</h5>
