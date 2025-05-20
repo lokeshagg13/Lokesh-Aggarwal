@@ -4,17 +4,22 @@ import SkillItem from "./SkillItem";
 const skillData = [
   {
     id: 1,
-    title: "SQL (Microsoft SQL Server, PostgreSQL)",
-    percentage: "93%",
+    title: "SQL (MySQL, PostgreSQL) + NoSQL",
+    percentage: "90%",
     sub: [
       {
         id: 1,
-        title: "Microsoft SQL Server",
+        title: "MySQL",
         percentage: "95%",
       },
       {
-        id: 1,
+        id: 2,
         title: "PostgreSQL",
+        percentage: "90%",
+      },
+      {
+        id: 3,
+        title: "MongoDB",
         percentage: "90%",
       },
     ],
@@ -22,7 +27,7 @@ const skillData = [
   {
     id: 2,
     title: "Python (Scikit-learn, Pandas, NumPy, SciPy)",
-    percentage: "95%",
+    percentage: "85%",
     sub: [
       {
         id: 1,
@@ -53,35 +58,106 @@ const skillData = [
   },
   {
     id: 3,
-    title: "Azure Databricks, Azure ML",
-    percentage: "90%",
+    title: "Big Data Analytics",
+    percentage: "80%",
     sub: [
       {
         id: 1,
-        title: "Azure Databricks",
+        title: "PySpark",
         percentage: "80%",
       },
       {
         id: 2,
-        title: "Azure ML",
-        percentage: "65%",
+        title: "Azure Databricks",
+        percentage: "80%",
+      },
+      {
+        id: 3,
+        title: "GCP BigQuery",
+        percentage: "70%",
       },
     ],
   },
   {
     id: 4,
-    title: "Machine Learning & Deep Learning Algorithms",
-    percentage: "90%",
+    title: "Microsoft SQL Server & Azure",
+    percentage: "80%",
+    sub: [
+      {
+        id: 1,
+        title: "Microsoft SQL Server",
+        percentage: "95%",
+      },
+      {
+        id: 2,
+        title: "Azure Fundamentals",
+        percentage: "80%",
+      },
+      {
+        id: 3,
+        title: "Azure ML",
+        percentage: "65%",
+      },
+      {
+        id: 4,
+        title: "Azure AI",
+        percentage: "65%",
+      },
+      {
+        id: 5,
+        title: "Azure Databricks",
+        percentage: "80%",
+      },
+    ],
   },
   {
     id: 5,
+    title: "Google Cloud Platform",
+    percentage: "75%",
+    sub: [
+      {
+        id: 1,
+        title: "GCP Compute and Storage Fundamentals",
+        percentage: "80%",
+      },
+      {
+        id: 2,
+        title: "GCP BigQuery",
+        percentage: "70%",
+      }
+    ],
+  },
+  {
+    id: 6,
+    title: "Machine Learning & Deep Learning Algorithms",
+    percentage: "87%",
+    sub: [
+      {
+        id: 1,
+        title: "Statistics and Mathematics of ML & DL",
+        percentage: "90%",
+      },
+      {
+        id: 2,
+        title: "Ensembling Techniques like Random Forests, XGBoost",
+        percentage: "90%",
+      },
+      {
+        id: 3,
+        title: "Hyperparameter Tuning",
+        percentage: "80%",
+      },
+    ],
+  },
+  {
+    id: 7,
     title: "Predictive Analysis",
     percentage: "75%",
   },
   {
-    id: 6,
+    id: 8,
     title: "Data Visualization (Tableau, Power BI)",
-    percentage: "85%",
+    percentage: "83%",
     sub: [
       {
         id: 1,
@@ -96,22 +172,17 @@ const skillData = [
     ],
   },
   {
-    id: 7,
+    id: 9,
     title: "Natural Language Processing",
     percentage: "80%",
   },
   {
-    id: 8,
-    title: "Hyperparameter Tuning",
-    percentage: "80%",
-  },
-  {
-    id: 9,
+    id: 10,
     title: "Feature Engineering",
     percentage: "75%",
   },
   {
-    id: 10,
+    id: 11,
     title: "Tensorflow, Keras, PyTorch",
     percentage: "75%",
     sub: [
@@ -128,24 +199,19 @@ const skillData = [
     ],
   },
   {
-    id: 11,
-    title: "Transformers (BERT, GPT-2, T5)",
-    percentage: "80%",
-  },
-  {
     id: 12,
-    title: "Fine-tuning Hugging Face Models",
+    title: "Hugging Face Transformers Library",
     percentage: "70%",
   },
   {
     id: 13,
-    title: "LangChain, LLMs, RAG",
-    percentage: "60%",
+    title: "Transformers, LangChain, LLMs, RAG",
+    percentage: "70%",
     sub: [
       {
         id: 1,
-        title: "LangChain",
-        percentage: "80%",
+        title: "Understanding of Transformers (BERT, GPT-2, T5)",
+        percentage: "75%",
       },
       {
         id: 2,
@@ -154,8 +220,13 @@ const skillData = [
       },
       {
         id: 3,
+        title: "LangChain",
+        percentage: "70%",
+      },
+      {
+        id: 4,
         title: "RAG",
-        percentage: "75%",
+        percentage: "60%",
       },
     ],
   },
