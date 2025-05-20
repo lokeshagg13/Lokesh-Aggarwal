@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/Lokesh-Aggarwal/static/js/main.1fff38ce.js",
+    "main.js": "/Lokesh-Aggarwal/static/js/main.c6a00adb.js",
     "static/media/manas-vani.png": "/Lokesh-Aggarwal/static/media/manas-vani.402704b0b8417007a8d1.png",
     "static/media/cover-image.jpg": "/Lokesh-Aggarwal/static/media/cover-image.b7563b4f7dc598581690.jpg",
     "static/media/fareportal-gsfa.png": "/Lokesh-Aggarwal/static/media/fareportal-gsfa.208a6cda56ea6cea0d1f.png",
@@ -20,9 +20,9 @@
     "static/media/monash-uni-logo.svg": "/Lokesh-Aggarwal/static/media/monash-uni-logo.d7758ca4ec2bdb5775fcb04236f3be31.svg",
     "static/media/fareportal-logo.jpg": "/Lokesh-Aggarwal/static/media/fareportal-logo.7fac6602fce3dcb515fa.jpg",
     "index.html": "/Lokesh-Aggarwal/index.html",
-    "main.1fff38ce.js.map": "/Lokesh-Aggarwal/static/js/main.1fff38ce.js.map"
+    "main.c6a00adb.js.map": "/Lokesh-Aggarwal/static/js/main.c6a00adb.js.map"
   },
   "entrypoints": [
-    "static/js/main.1fff38ce.js"
+    "static/js/main.c6a00adb.js"
   ]
 }
